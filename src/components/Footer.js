@@ -2,68 +2,41 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white text-center py-5">
+    <footer style={{ backgroundColor: '#333', color: '#fff', padding: '2rem 0', textAlign: 'center' }}>
       <div className="container">
-        <div className="mb-4">
-          <h5>ติดต่อเรา</h5>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h4>Contact Us</h4>
           <p>
-            วิทยาลัยโปลิเทคนิคลานนา เชียงใหม่ <br />
-            123 ถนนวิทยาลัย ตำบลเมือง อำเภอเมือง จังหวัดเชียงใหม่ 50000
+            Lanna Polytechnic College, Chiang Mai <br />
+            123 College Road, Mueang Subdistrict, Mueang District, Chiang Mai 50000
           </p>
         </div>
 
-        <div className="mb-4">
-        <h5>ติดตามเรา</h5>
-        <div className="d-flex justify-content-center gap-3">
-            <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-            style={{ fontSize: '1.5rem' }}
-            >
-            <i className="fab fa-facebook"></i>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h4>Follow Us</h4>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '1.5rem' }}>
+              <i className="fab fa-facebook"></i>
             </a>
-            <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-            style={{ fontSize: '1.5rem' }}
-            >
-            <i className="fab fa-twitter"></i>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '1.5rem' }}>
+              <i className="fab fa-twitter"></i>
             </a>
-            <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-            style={{ fontSize: '1.5rem' }}
-            >
-            <i className="fab fa-instagram"></i>
-            </a>
-        </div>
-        </div>
-
-
-        <div className="mb-4">
-          <h5>ลิงก์สำคัญ</h5>
-          <div className="d-flex justify-content-center gap-4">
-            <a href="/about" className="text-white">
-              เกี่ยวกับเรา
-            </a>
-            <a href="/courses" className="text-white">
-              หลักสูตร
-            </a>
-            <a href="/contact" className="text-white">
-              ติดต่อเรา
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '1.5rem' }}>
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>
 
-        <div className="text-white-50">
-          <p>© 2024 โปลิเทคนิคลานนา. เชียงใหม่. All rights reserved.</p>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h4>Quick Links</h4>
+          <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem' }}>
+            <a href="/about" style={{ color: '#fff', textDecoration: 'none' }}>About Us</a>
+            <a href="/courses" style={{ color: '#fff', textDecoration: 'none' }}>Courses</a>
+            <a href="/contact" style={{ color: '#fff', textDecoration: 'none' }}>Contact Us</a>
+          </div>
         </div>
+
+        <p style={{ color: '#aaa' }}>© 2024 Lanna Polytechnic College. All rights reserved.</p>
       </div>
     </footer>
   );

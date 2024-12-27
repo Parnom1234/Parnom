@@ -2,86 +2,186 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div
-      style={{
-        backgroundImage:
-          "url('https://uat-backend.thaisisterhood.com/public/uploads/place/13/original/654c65f35a0a11699505651.jpg')",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        backgroundBlendMode: "overlay",
-        color: "#fff",
-      }}
-    >
-      {/* Header Section */}
-      <header className="bg-success text-white text-center py-5">
-        <div className="container">
-          {/* Logo Section */}
+    <div>
+      {/* Main Wrapper Section */}
+      <section
+        className="main-wrapper"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          minHeight: "100vh",
+          background: "linear-gradient(to right, #4caf50, #2a9d8f)",
+          color: "#fff",
+          textAlign: "center",
+          padding: "40px 0",
+        }}
+      >
+        {/* Logo and Heading */}
+        <div className="logo-heading">
           <img
-            src="https://www.lannapoly.ac.th/web/assets/logo_lannapoly-CnawhWXg.png" // แก้ URL เป็นลิงก์โลโก้วิทยาลัย
-            alt="Logo"
+            src="https://www.lannapoly.ac.th/web/assets/logo_lannapoly-CnawhWXg.png"
+            alt="Lanna Polytechnic Logo"
             style={{
-              width: "150px", // ขนาดโลโก้
-              height: "auto", // อัตราส่วนที่เหมาะสม
-              marginBottom: "20px", // เว้นช่องว่างระหว่างโลโก้กับหัวข้อ
+              width: "180px",
+              height: "auto",
+              marginBottom: "30px",
             }}
           />
-          <h1>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา</h1>
-          <p className="lead">สาขาเทคโนโลยีสารสนเทศ</p>
-        </div>
-      </header>
-
-      {/* Projects Section */}
-      <section className="py-5">
-        <div className="container">
-          <h2
-            className="text-center mb-4"
+          <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: "3rem" }}>
+            วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา
+          </h1>
+          <p
+            className="lead"
             style={{
-              color: "#ffcc00",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+              fontSize: "1.5rem",
+              fontWeight: "300",
+              letterSpacing: "1px",
+              textTransform: "uppercase",
+              marginBottom: "40px",
             }}
           >
-            ภาพหน้าสนใจ
+            สาขาเทคโนโลยีสารสนเทศ
+          </p>
+        </div>
+
+        {/* Call to Action */}
+        <div className="cta">
+          <a
+            href="#projects"
+            className="btn btn-primary"
+            style={{
+              padding: "10px 20px",
+              fontSize: "1.2rem",
+              backgroundColor: "#ff6347",
+              color: "#fff",
+              borderRadius: "25px",
+              textDecoration: "none",
+              transition: "background-color 0.3s ease",
+            }}
+          >
+            ดูโครงการที่น่าสนใจ
+          </a>
+        </div>
+      </section>
+
+      {/* Featured Projects Section */}
+      <section
+        id="projects"
+        style={{
+          padding: "60px 0",
+          backgroundColor: "#f8f8f8",
+          borderTop: "5px solid #ff6347",
+        }}
+      >
+        <div className="container">
+          <h2
+            className="text-center mb-5"
+            style={{
+              color: "#2d3748",
+              fontFamily: "'Poppins', sans-serif",
+              fontWeight: "600",
+              textTransform: "uppercase",
+            }}
+          >
+            โครงการที่น่าสนใจ
           </h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card border-0 shadow-lg">
+          <div
+            className="row row-cols-1 row-cols-md-3 g-4"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "20px",
+            }}
+          >
+            {/* Project Card 1 */}
+            <div className="col">
+              <div
+                className="card"
+                style={{
+                  border: "none",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+                  overflow: "hidden",
+                  transition: "transform 0.3s ease",
+                }}
+              >
                 <img
-                  src="https://www.konlanna.com/media/img/4k9ajACv5frpQGm7vUTnbEnSCYjU7ssq.jpg"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIMBTDepOQjEg-LkTA3nlfaogwgkMa6C4sGA&s"
                   className="card-img-top"
                   alt="Project 1"
                   style={{
-                    height: "200px",
+                    height: "250px",
                     objectFit: "cover",
                   }}
                 />
+                <div className="card-body">
+                  <h5 className="card-title">โครงการที่ 1</h5>
+                  <p className="card-text">
+                    รายละเอียดเกี่ยวกับโครงการ 1
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card border-0 shadow-lg">
+
+            {/* Project Card 2 */}
+            <div className="col">
+              <div
+                className="card"
+                style={{
+                  border: "none",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+                  overflow: "hidden",
+                  transition: "transform 0.3s ease",
+                }}
+              >
                 <img
-                  src="https://www.khaosod.co.th/wpapp/uploads/2024/06/Lanna-Polytechnic-ChiangMai.jpg"
+                  src="https://www.lannapoly.ac.th/web/gallery/20241121-094109.jpg"
                   className="card-img-top"
                   alt="Project 2"
                   style={{
-                    height: "200px",
+                    height: "250px",
                     objectFit: "cover",
                   }}
                 />
+                <div className="card-body">
+                  <h5 className="card-title">โครงการที่ 2</h5>
+                  <p className="card-text">
+                    รายละเอียดเกี่ยวกับโครงการ 2
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="col-md-4">
-              <div className="card border-0 shadow-lg">
+
+            {/* Project Card 3 */}
+            <div className="col">
+              <div
+                className="card"
+                style={{
+                  border: "none",
+                  borderRadius: "10px",
+                  boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+                  overflow: "hidden",
+                  transition: "transform 0.3s ease",
+                }}
+              >
                 <img
-                  src="https://lh4.googleusercontent.com/proxy/IwxfxPixo9uKzANCNbblfWGfXGsXNLVOPkZEchkmNMl3Sh9X-sivk4TPQhn-jkhaPdFlJRxMcDTDEPtDoeBwNEAihWxhcc8Svi3jsBf4cLQ1gyv97r-t76vVXpNp4tTMhJ4rGODgb32xO8gzrxvQHVf6w0h3TagJBIqP9KmsCg3RvlzQloSQxKw"
+                  src="https://www.lannapoly.ac.th/poly_alumni/img/2566.jpg"
                   className="card-img-top"
                   alt="Project 3"
                   style={{
-                    height: "200px",
+                    height: "250px",
                     objectFit: "cover",
                   }}
                 />
+                <div className="card-body">
+                  <h5 className="card-title">โครงการที่ 3</h5>
+                  <p className="card-text">
+                    รายละเอียดเกี่ยวกับโครงการ 3
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -90,21 +190,33 @@ const Home = () => {
 
       {/* About Us Section */}
       <section
-        className="py-5"
-        style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}
+        style={{
+          padding: "60px 0",
+          backgroundColor: "#fff",
+          borderTop: "5px solid #4caf50",
+        }}
       >
         <div className="container">
           <h2
-            className="text-center mb-4"
+            className="text-center mb-5"
             style={{
-              color: "#ffcc00",
-              textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+              color: "#2d3748",
+              fontFamily: "'Poppins', sans-serif",
+              fontWeight: "600",
+              textTransform: "uppercase",
             }}
           >
-            เกี่ยวกับ
+            เกี่ยวกับเรา
           </h2>
-          <p className="text-center" style={{ color: "#333" }}>
-            เว็บไซต์นี้ถูกสร้างเมื่อวันที่ 27 ธันวาคม พ.ศ. 2567 โดยนายชนะวงศ์ ชาเนตร IT4102 เลขที่ 24
+          <p
+            className="text-center"
+            style={{
+              color: "#333",
+              fontSize: "1.1rem",
+              lineHeight: "1.7",
+            }}
+          >
+            เว็บไซต์นี้ถูกสร้างเมื่อวันที่ 27 ธันวาคม พ.ศ. 2567 โดยนายเผอหนุ่ม จายคำ IT4102 เลขที่ 25
             <br />
             เพื่อเป็นส่วนหนึ่งของวิชา Front-End Development
             <br />
@@ -114,6 +226,18 @@ const Home = () => {
           </p>
         </div>
       </section>
+
+      {/* Footer Section */}
+      <footer
+        style={{
+          backgroundColor: "#4caf50",
+          color: "#fff",
+          textAlign: "center",
+          padding: "20px 0",
+        }}
+      >
+        <p>&copy; 2024 วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา. All Rights Reserved.</p>
+      </footer>
     </div>
   );
 };

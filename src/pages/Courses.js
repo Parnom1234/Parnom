@@ -16,49 +16,30 @@ const Courses = () => {
     {
       id: 1,
       title: "ประกาศนียบัตรวิชาชีพ (ปวช.)",
-      description:
-        "หลักสูตรที่มุ่งเน้นการพัฒนาทักษะพื้นฐานด้านเทคโนโลยีสารสนเทศ เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อหรือการทำงานในสายงานที่เกี่ยวข้อง",
-      details:
-        "หลักสูตรนี้เน้นการเรียนรู้พื้นฐานที่สำคัญของเทคโนโลยีสารสนเทศ เช่น การใช้งานโปรแกรมคอมพิวเตอร์, การเรียนรู้ระบบเครือข่าย, และการพัฒนาเว็บไซต์เบื้องต้น",
-      imgUrl:
-        "https://lh3.googleusercontent.com/proxy/2juXJ2bHZ2FAiGuoX5TB215wA5mTgJjwG9lAXUtAeTVsEnPhYCwTdFdcih6x365XtF1LmD0Utsj4M14slloS6XmDawfgwW8y6OBadExW0ZVCzUkrGQUxlQDuiwWPzFSA2Q",
+      description: "หลักสูตรที่มุ่งเน้นการพัฒนาทักษะพื้นฐานด้านเทคโนโลยีสารสนเทศ...",
+      details: "หลักสูตรนี้เน้นการเรียนรู้พื้นฐานที่สำคัญของเทคโนโลยีสารสนเทศ...",
+      imgUrl: "https://path-to-image.com",  // ใส่ URL รูปภาพที่แท้จริง
     },
     {
       id: 2,
       title: "ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)",
-      description:
-        "หลักสูตรขั้นสูงที่เน้นการฝึกฝนทักษะและความรู้เชิงลึกในด้านเทคโนโลยีสารสนเทศ เพื่อเตรียมความพร้อมสำหรับการประกอบอาชีพหรือศึกษาต่อในระดับที่สูงขึ้น",
-      details:
-        "หลักสูตรนี้มุ่งเน้นการฝึกฝนในระดับที่สูงขึ้น เช่น การพัฒนาระบบฐานข้อมูล, การจัดการเครือข่ายคอมพิวเตอร์, และการพัฒนาแอปพลิเคชันเชิงธุรกิจ",
-      imgUrl:
-        "https://static.naewna.com/uploads/news/gallery/source/201134.jpg",
+      description: "หลักสูตรที่เน้นการฝึกฝนทักษะขั้นสูงในด้านเทคโนโลยีสารสนเทศ...",
+      details: "หลักสูตรนี้มุ่งเน้นการพัฒนาทักษะที่สูงขึ้นในด้านเทคโนโลยีสารสนเทศ...",
+      imgUrl: "https://path-to-image.com",  // ใส่ URL รูปภาพที่แท้จริง
     },
-    {
-      id: 3,
-      title: "การฝึกอบรมระยะสั้น",
-      description:
-        "หลักสูตรพิเศษระยะสั้นที่มุ่งเน้นการเสริมสร้างทักษะเฉพาะด้านในเทคโนโลยีสารสนเทศ สำหรับผู้ที่ต้องการพัฒนาความรู้และความสามารถเพิ่มเติม",
-      details:
-        "หลักสูตรระยะสั้นนี้เหมาะสำหรับผู้ที่ต้องการเรียนรู้ทักษะเฉพาะทาง เช่น การพัฒนาเว็บไซต์, การวิเคราะห์ข้อมูล, และการใช้เครื่องมือทางเทคโนโลยีสารสนเทศอื่น ๆ",
-      imgUrl:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHQNdk01TWdc6ouxJFNYbVtROXC3SgBx_g5w&s",
-    },
+    // เพิ่มข้อมูลหลักสูตรเพิ่มเติมที่นี่
   ];
 
   return (
     <div>
-      {/* Courses Section */}
       <section className="bg-light py-5">
         <div className="container">
-          <h1 className="text-center mb-4" style={{ color: "#4caf50" }}>
+          <h1 className="text-center mb-4" style={{ color: "#4caf50", fontWeight: "600" }}>
             หลักสูตรที่เราเปิดสอน
           </h1>
-          <p className="text-center mb-5">
-            สำรวจหลักสูตรต่าง ๆ ที่เรามีในสาขาเทคโนโลยีสารสนเทศ
-          </p>
-          <div className="row">
+          <div className="row row-cols-1 row-cols-md-3 g-4">
             {courses.map((course) => (
-              <div className="col-md-4" key={course.id}>
+              <div className="col" key={course.id}>
                 <div
                   className="card h-100 shadow-lg border-0"
                   style={{ cursor: "pointer" }}
@@ -70,8 +51,8 @@ const Courses = () => {
                     alt={course.title}
                     style={{
                       transition: "transform 0.3s ease",
-                      objectFit: "cover", // Make sure all images are the same size
-                      height: "200px", // Set fixed height for images
+                      objectFit: "cover",
+                      height: "200px",
                     }}
                   />
                   <div className="card-body">
@@ -87,7 +68,7 @@ const Courses = () => {
         </div>
       </section>
 
-      {/* Modal for course details */}
+      {/* Modal for Course Details */}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>{courseDetails.title}</Modal.Title>
@@ -97,24 +78,10 @@ const Courses = () => {
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseModal}>
-            Close
+            ปิด
           </Button>
         </Modal.Footer>
       </Modal>
-
-      {/* Custom Styles for Hover Effects */}
-      <style>
-        {`
-          .card-img-top:hover {
-            transform: scale(1.05);
-            cursor: pointer;
-          }
-
-          .card:hover {
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-          }
-        `}
-      </style>
     </div>
   );
 };

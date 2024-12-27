@@ -8,6 +8,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState(""); // เพิ่ม state สำหรับข้อความสำเร็จ
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +22,14 @@ const Contact = () => {
     if (!formData.password) formErrors.password = "กรุณากรอกรหัสผ่าน";
     if (!formData.message) formErrors.message = "กรุณาใส่ข้อความที่ต้องการส่ง";
     setErrors(formErrors);
+
+    // หากไม่มีข้อผิดพลาด
+    if (Object.keys(formErrors).length === 0) {
+      // แสดงข้อความสำเร็จ
+      setSuccessMessage("ส่งข้อความสำเร็จ ขอบคุณที่ติดต่อเรา!");
+      // รีเซ็ตฟอร์ม
+      setFormData({ email: "", password: "", message: "" });
+    }
   };
 
   return (
@@ -28,7 +37,7 @@ const Contact = () => {
       {/* Contact Us Section */}
       <section className="bg-light py-5">
         <div className="container">
-          <h1 className="text-center mb-4" style={{ color: "#4caf50" }}>
+          <h1 className="text-center mb-4" style={{ color: "#4caf50", fontWeight: '600' }}>
             ติดต่อเรา
           </h1>
           <p className="text-center">
@@ -72,6 +81,12 @@ const Contact = () => {
           <h2 className="text-center mb-4" style={{ color: "#4caf50" }}>
             แบบฟอร์มติดต่อ
           </h2>
+          {/* แสดงข้อความสำเร็จ */}
+          {successMessage && (
+            <div className="alert alert-success text-center">
+              {successMessage}
+            </div>
+          )}
           <form onSubmit={handleSubmit} className="w-75 mx-auto">
             <div className="mb-3">
               <label htmlFor="email" className="form-label">
@@ -86,7 +101,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
               />
-              {errors.email && <div className="text-danger">{errors.email}</div>}
+              {errors.email && <div className="invalid-feedback">{errors.email}</div>}
             </div>
             <div className="mb-3">
               <label htmlFor="password" className="form-label">
@@ -94,9 +109,7 @@ const Contact = () => {
               </label>
               <input
                 type="password"
-                className={`form-control ${
-                  errors.password ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.password ? "is-invalid" : ""}`}
                 id="password"
                 name="password"
                 placeholder="กรุณากรอกรหัสผ่าน"
@@ -104,7 +117,7 @@ const Contact = () => {
                 onChange={handleChange}
               />
               {errors.password && (
-                <div className="text-danger">{errors.password}</div>
+                <div className="invalid-feedback">{errors.password}</div>
               )}
             </div>
             <div className="mb-3">
@@ -112,9 +125,7 @@ const Contact = () => {
                 ข้อความ:
               </label>
               <textarea
-                className={`form-control ${
-                  errors.message ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.message ? "is-invalid" : ""}`}
                 id="message"
                 name="message"
                 rows="5"
@@ -123,7 +134,7 @@ const Contact = () => {
                 onChange={handleChange}
               ></textarea>
               {errors.message && (
-                <div className="text-danger">{errors.message}</div>
+                <div className="invalid-feedback">{errors.message}</div>
               )}
             </div>
             <div className="text-center">
