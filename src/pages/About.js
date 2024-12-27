@@ -21,7 +21,7 @@ const About = () => {
           <div className="row">
             <div className="col-md-6">
               <img
-                src="https://scontent.fcnx3-1.fna.fbcdn.net/v/t39.30808-6/459572266_1038987961560629_5992916616841721678_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cP6DHXtBykkQ7kNvgFlqjXE&_nc_oc=Adh6wMJN4A9x8J4i9b-7iW8s-AB5fO_fLzyrbHeUjVkYXR2sOsnGmrulpRBb9W9dLGU&_nc_zt=23&_nc_ht=scontent.fcnx3-1.fna&_nc_gid=AV2_zoUp7s1AiZbfYdTP501&oh=00_AYDxtfZITMe9WyFCtPNQOwWsgHUd0COzO5NJxTwcATx8lA&oe=6773FE22"
+                src="https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/459572266_1038987961560629_5992916616841721678_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=cP6DHXtBykkQ7kNvgE9C97o&_nc_oc=AdgSyKBOpAZlQK--X6B1M3PRfbEL7mNUbgKLhMDfMoM67XgBTlanNQE0Wi1XdVIgXXA&_nc_zt=23&_nc_ht=scontent.fcnx1-1.fna&_nc_gid=AQQbH_fxuPJdy6FF2uSYWsK&oh=00_AYDUXlpxTbc3BFO_qhOqjkWPvuCZ6ZZPTLL1dy7mBN6FZQ&oe=6773FE22"
                 alt="About Us"
                 className="img-fluid rounded"
               />
@@ -39,26 +39,93 @@ const About = () => {
 
       {/* History Section */}
       <section className="bg-warning py-5">
-        <div className="container text-center">
-          <h2 className="mb-4">ประวัติความเป็นมา</h2>
-          <p>
-            วิทยาลัยก่อตั้งขึ้นในปี พ.ศ. 2538 ด้วยความมุ่งมั่นที่จะสร้างสรรค์เทคโนโลยีที่ทันสมัย  
-            และช่วยยกระดับชุมชนผ่านการพัฒนานวัตกรรม โดยมุ่งเน้นที่คุณภาพการศึกษา  
-            และการผลิตบัณฑิตที่พร้อมตอบสนองความต้องการของตลาดแรงงาน
-          </p>
+        <div className="container">
+          <h2 className="text-center mb-4">ประวัติความเป็นมา</h2>
+          <div className="row align-items-center">
+            <div className="col-md-6">
+              <p>
+                วิทยาลัยก่อตั้งขึ้นในปี พ.ศ. 2538 ด้วยความมุ่งมั่นที่จะสร้างสรรค์เทคโนโลยีที่ทันสมัย  
+                และช่วยยกระดับชุมชนผ่านการพัฒนานวัตกรรม โดยมุ่งเน้นที่คุณภาพการศึกษา  
+                และการผลิตบัณฑิตที่พร้อมตอบสนองความต้องการของตลาดแรงงาน
+              </p>
+            </div>
+            <div className="col-md-6">
+              <img
+                src="https://www.lannapoly.ac.th/poly_alumni/img/2565.jpg"
+                alt="History"
+                className="img-fluid rounded shadow"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Vision Section */}
       <section className="py-5 bg-dark text-white">
-        <div className="container text-center">
-          <h2 className="mb-4">วิสัยทัศน์ของเรา</h2>
-          <p>
-            "เป็นผู้นำด้านเทคโนโลยีและนวัตกรรม เพื่อสร้างอนาคตที่ยั่งยืนสำหรับทุกคน"
-          </p>
+        <div className="container">
+          <h2 className="text-center mb-4">วิสัยทัศน์ของเรา</h2>
+          <div
+            id="visionCarousel"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img
+                  src="https://i.ytimg.com/vi/OyLcgnQRg5k/maxresdefault.jpg"
+                  className="d-block w-100"
+                  alt="Vision 1"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>วิสัยทัศน์ที่ 1</h5>
+                  <p>เรามุ่งมั่นที่จะเป็นผู้นำด้านเทคโนโลยีสารสนเทศ ที่สร้างสรรค์นวัตกรรมเพื่อพัฒนาสังคม</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="https://www.cmthainews.com/wp-content/uploads/2022/05/S__16703590.jpg"
+                  className="d-block w-100"
+                  alt="Vision 2"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>วิสัยทัศน์ที่ 2</h5>
+                  <p>เราจะส่งเสริมการเรียนรู้และพัฒนาทักษะการทำงานที่สามารถนำไปใช้ในชีวิตจริงได้</p>
+                </div>
+              </div>
+              <div className="carousel-item">
+                <img
+                  src="https://mpics.mgronline.com/pics/Images/566000005762504.JPEG"
+                  className="d-block w-100"
+                  alt="Vision 3"
+                />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>วิสัยทัศน์ที่ 3</h5>
+                  <p>เรามุ่งเน้นการสร้างบัณฑิตที่มีทักษะสูงและพร้อมที่จะรับมือกับการเปลี่ยนแปลงของโลกในยุคดิจิทัล</p>
+                </div>
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#visionCarousel"
+              data-bs-slide="prev"
+            >
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#visionCarousel"
+              data-bs-slide="next"
+            >
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </section>
-
+      
       {/* Call to Action Section */}
       <section className="py-5 bg-success text-white">
         <div className="container text-center">
