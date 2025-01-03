@@ -18,16 +18,15 @@ const Courses = () => {
       title: "ประกาศนียบัตรวิชาชีพ (ปวช.)",
       description: "หลักสูตรที่มุ่งเน้นการพัฒนาทักษะพื้นฐานด้านเทคโนโลยีสารสนเทศ...",
       details: "หลักสูตรนี้เน้นการเรียนรู้พื้นฐานที่สำคัญของเทคโนโลยีสารสนเทศ...",
-      imgUrl: "https://path-to-image.com",  // ใส่ URL รูปภาพที่แท้จริง
+      imgUrl: "https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/466679249_1066713731916739_6371523822895452620_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Dtb5QNm4jNwQ7kNvgHHmf75&_nc_oc=Adjt3aoXUpeuBA64lVBrsNi6YWKpPZk76-BLjTTIW3DWXTNJWuZF3owZ554RM-PBvkI&_nc_zt=23&_nc_ht=scontent.fcnx1-1.fna&_nc_gid=AcSKV4LRFa6R9zoHm78_Qs6&oh=00_AYAHpSTQjBppIsYwS6Pu0qoff6Bl1DJqDtDktuNwb46Uaw&oe=677D267D",
     },
     {
       id: 2,
       title: "ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)",
       description: "หลักสูตรที่เน้นการฝึกฝนทักษะขั้นสูงในด้านเทคโนโลยีสารสนเทศ...",
       details: "หลักสูตรนี้มุ่งเน้นการพัฒนาทักษะที่สูงขึ้นในด้านเทคโนโลยีสารสนเทศ...",
-      imgUrl: "https://path-to-image.com",  // ใส่ URL รูปภาพที่แท้จริง
+      imgUrl: "https://scontent.fcnx1-1.fna.fbcdn.net/v/t39.30808-6/467157927_1066713808583398_5751301120261094833_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=GuEzFp8LmI4Q7kNvgHewSoG&_nc_oc=AdjcDMi3yNsIv_eFalvb7WOsFHOyhkj-LKC00QYvmOtTCqGr_1cwC14og_8unw1uqSs&_nc_zt=23&_nc_ht=scontent.fcnx1-1.fna&_nc_gid=AUU0q5AoOUQNLhAp-VtF4-c&oh=00_AYCD6TaDMzr0ccfQztxAvQ7gGeHLyFZQGxpbrT0a1qvvJw&oe=677D1A29",
     },
-    // เพิ่มข้อมูลหลักสูตรเพิ่มเติมที่นี่
   ];
 
   return (
@@ -37,11 +36,11 @@ const Courses = () => {
           <h1 className="text-center mb-4" style={{ color: "#4caf50", fontWeight: "600" }}>
             หลักสูตรที่เราเปิดสอน
           </h1>
-          <div className="row row-cols-1 row-cols-md-3 g-4">
+          <div className="row justify-content-center">
             {courses.map((course) => (
-              <div className="col" key={course.id}>
+              <div className="col-md-6 col-lg-4 mb-4" key={course.id}>
                 <div
-                  className="card h-100 shadow-lg border-0"
+                  className="card h-100 shadow-lg border-0 d-flex flex-column justify-content-center align-items-center text-center"
                   style={{ cursor: "pointer" }}
                   onClick={() => handleShowModal(course)}
                 >
@@ -53,6 +52,7 @@ const Courses = () => {
                       transition: "transform 0.3s ease",
                       objectFit: "cover",
                       height: "200px",
+                      width: "100%",
                     }}
                   />
                   <div className="card-body">
