@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/itpoly-web/static/css/main.dfb5d3f0.css",
-    "main.js": "/itpoly-web/static/js/main.f8e1ff21.js",
-    "static/js/488.eb5b9b61.chunk.js": "/itpoly-web/static/js/488.eb5b9b61.chunk.js",
-    "static/media/fa-solid-900.ttf": "/itpoly-web/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
-    "static/media/fa-brands-400.ttf": "/itpoly-web/static/media/fa-brands-400.1815e00441357e01619e.ttf",
-    "static/media/fa-solid-900.woff2": "/itpoly-web/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
-    "static/media/fa-brands-400.woff2": "/itpoly-web/static/media/fa-brands-400.c210719e60948b211a12.woff2",
-    "static/media/fa-regular-400.ttf": "/itpoly-web/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
-    "static/media/fa-regular-400.woff2": "/itpoly-web/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
-    "static/media/fa-v4compatibility.ttf": "/itpoly-web/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
-    "static/media/fa-v4compatibility.woff2": "/itpoly-web/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
-    "index.html": "/itpoly-web/index.html",
-    "main.dfb5d3f0.css.map": "/itpoly-web/static/css/main.dfb5d3f0.css.map",
-    "main.f8e1ff21.js.map": "/itpoly-web/static/js/main.f8e1ff21.js.map",
-    "488.eb5b9b61.chunk.js.map": "/itpoly-web/static/js/488.eb5b9b61.chunk.js.map"
+    "main.css": "/Parnom/static/css/main.6db4eec5.css",
+    "main.js": "/Parnom/static/js/main.cba268f8.js",
+    "static/js/488.eb5b9b61.chunk.js": "/Parnom/static/js/488.eb5b9b61.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Parnom/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/Parnom/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/Parnom/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/Parnom/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/Parnom/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/Parnom/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Parnom/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Parnom/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/Parnom/index.html",
+    "main.6db4eec5.css.map": "/Parnom/static/css/main.6db4eec5.css.map",
+    "main.cba268f8.js.map": "/Parnom/static/js/main.cba268f8.js.map",
+    "488.eb5b9b61.chunk.js.map": "/Parnom/static/js/488.eb5b9b61.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfb5d3f0.css",
-    "static/js/main.f8e1ff21.js"
+    "static/css/main.6db4eec5.css",
+    "static/js/main.cba268f8.js"
   ]
 }
