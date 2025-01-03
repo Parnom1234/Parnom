@@ -2,7 +2,7 @@
   "name": "itpoly-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://parnom1234.github.io/itpoly-web/",
+  "homepage": "https://parnom1234.github.io/Parnom/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "bootstrap": "^5.3.3",
